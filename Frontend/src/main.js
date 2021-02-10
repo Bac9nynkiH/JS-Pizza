@@ -13,3 +13,4 @@ $(function(){
 
 
 });
+PizzaMenu.initialiseMenu();

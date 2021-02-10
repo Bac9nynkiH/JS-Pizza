@@ -1,3 +1,430 @@
 @mainColor: blue;
 
 @import "pizza/pizza-card";
+
+[data-new]::after{
+    border-radius: 10%;
+    content:attr(data-new);
+    position:absolute;
+    width:100px;
+    bottom:98%;
+    right: 0;
+    background : darkred;
+    color : #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events :none;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 3px;
+    height: 20px;
+    box-sizing: border-box;
+    
+   
+}
+.mbLater{
+    display: inline-flex;
+    align-items: stretch;
+}
+.PIZZA{
+    top:10px;
+    left: 9px;
+    position: absolute;
+    color: white;
+}
+.KMA{
+top: 40px;
+left: 13px;
+position: absolute;
+color: white;
+
+}
+.rightBoughtImg{
+    
+    position: absolute;
+top: -60px;
+right: -225px;
+    transform: scale(0.3);
+    float: left;
+}
+.minus {
+    opacity: 1;
+    border-radius: 50%;
+    padding: 6px 7px;
+    /*cursor: pointer;*/
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    cursor: auto;
+}
+
+.plus {
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 6px 7px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: white;
+}
+.X{
+opacity: 1;
+cursor: pointer;
+border-radius: 50%;
+padding: 4px 8px;
+border: none;
+outline: none;
+background-color: white;
+color: orange;
+
+}
+
+.DB{
+    display: inline-block;
+width: 49%;
+}
+.MB{
+    display: inline-block;
+width: 49%;
+}
+
+[data-popular]::after {
+    border-radius:10%;
+ content: attr(data-popular);
+    position: absolute;
+    width:100px;
+    bottom: 98%;
+    right: 0;
+    background: green;
+    color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events:none;
+    text-align:center;
+    font-size: 15px;
+    padding-bottom : 3px;
+    height: 20px;
+    box-sizing: border-box;
+
+
+}
+
+
+
+#body{
+    font-size: 14px;
+    background-color: wheat;
+}
+
+
+#row{
+    margin-top: 80px;
+}
+
+.StickyNavbar {
+    display: inline-block;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: calc(100%/12*10);
+    height: 80px;
+    background-color: black;
+    opacity: 70%;
+}
+.HeaderUpper {
+    color: lightgrey;
+    width: 100%;
+    height: 35px;
+    border-bottom: 4px solid lightgrey;
+}
+.HeaderDown {
+    color: lightgray;
+    height: 35px;
+}
+.grn {
+    margin-bottom: 0;
+}
+.DPizzaSmallSize {
+    margin-bottom: 0;
+}
+.containetColumn {
+    display: inline-flex;
+    width: 50%;
+}
+#buySelectedPizza {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#exit{
+    position: fixed;
+    top: 0px;
+    right: calc(100%/12*2);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+}
+.flag{
+transform:rotate(180deg);
+    width: 70px;
+    height: 200px;
+    float: left;
+}
+
+
+.smallPizza , .bigPizza{
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0px;
+    width: 50%-1px;
+}
+h2{
+    margin-bottom: 0px;
+}
+.buy{
+    border: none;
+    color: white;
+    background-color: orange;
+}
+.AllPizza{
+    text-align: center;
+}
+.enumProducts{
+    padding: 4px;
+    color: orange;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.enumProducts:focus{
+    color: white;
+    background-color: orange;
+}
+.enumProducts:hover {
+    color: white;
+    background-color: orange;
+}
+.Footer{
+    text-align: center;
+    padding-top: 30px;
+padding-bottom:50px;
+padding-left: 35%;
+padding-right: 35%;
+
+    justify-content: space-around;
+    background-color: white;
+    height: 100px;
+}
+#cart{
+
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+ 
+    width: inherit;
+}
+.orderPanel{
+    padding-left: 8px;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+}
+.btnClear{
+    padding-right: 8px;
+    text-align: right;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+.boughtRow{
+    padding: 15px;
+    height: 150px;
+    width: 100%;
+background-color: lightgray;
+}
+.rightBoughtImgGusto{
+position: absolute;
+top: 80px;
+right: -225px;
+transform: scale(0.3);
+float: left;
+
+}
+.rightBoughtImgPolo{
+    position: absolute;
+    top: 220px;
+    right: -225px;
+    transform: scale(0.3);
+    float: left;
+
+}
+.boughtRows{
+    height: 100vh;
+    background-color: lightgray;
+}
+
+@media(max-width: 1200px) {
+    .StickyNavbar{
+        width: calc(100%/12*9);
+    }
+#exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*3);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+}
+
+
+}
+
+@media(max-width: 992px) {
+    .StickyNavbar{
+        width: calc(100%/12*8);
+    }
+
+#exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*4);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+}
+
+}
+@media(max-width: 766px){
+    .StickyNavbar {
+        width: calc(100%/12*6);
+    }
+#exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*6);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+}
+
+#h4N{
+    width: 5px;
+    display: inline-block;
+}
+p{
+    display: inline-block;
+}
+
+}
+.sumzam{
+    display: inline-block;
+    width: 49%;
+}
+.summary{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.Sumgrn{
+    text-align: right;
+    display: inline-block;
+    width: 49%;
+
+
+}
+.order{
+    margin-top: 5px;
+    background-color: orange;
+    color: white;
+    border: none;
+    display: inline-block;
+    width: 90%;
+    height: 40px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    z-index: 1;
+}
+.bottomFlagDiscount {
+    display: block;
+    float: left;
+    height: 75px;
+    width: 30px;
+    margin-left: 10px;
+}
+.flagBottom {
+    height: 200px;
+    width: 110px;
+    position: relative;
+  
+    margin-left: 10px;
+    margin-bottom: -25px;
+}
+.this,
+.week,
+.forAll,
+.discount {
+    position: absolute;
+    display: inline;
+    font-size: 16px;
+    color: white;
+}
+.this {
+    bottom: 50px;
+    left: 47px;
+}
+.week {
+    bottom: 32px;
+    left: 45px;
+}
+.forAll {
+    bottom: 15px;
+    left: 45px;
+}
+.discount {
+    bottom: -7px;
+    left: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,9 +1,8 @@
-.pizza-card img {
-  max-width: 250px;
-}
-.pizza-card h3 {
-  color: blue;
-  background-color: #e5e5ff;
+#pizza-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
 }
 .new {
   border-radius: 10%;
@@ -23,10 +22,7 @@
   box-sizing: border-box;
 }
 .caption {
-  height: 118px;
-}
-.thumbnail {
-  min-height: 586px;
+  height: 140px;
 }
 .mbLater {
   display: inline-block;
@@ -44,15 +40,22 @@
   position: absolute;
   color: white;
 }
+#bought {
+  max-width: 160px;
+}
+.boughtBlock {
+  display: inline-block;
+  max-width: 130px;
+}
 #h4N {
   min-width: 99px;
   white-space: pre;
   display: inline-block;
 }
 .rightBoughtImg {
-  position: fixed;
-  top: -50px;
-  right: -225px;
+  position: absolute;
+  top: -125px;
+  right: -244px;
   transform: scale(0.3);
   float: left;
 }
@@ -91,11 +94,11 @@
 }
 .DB {
   display: inline-block;
-  width: 49%;
+  width: 45%;
 }
 .MB {
   display: inline-block;
-  width: 49%;
+  width: 45%;
 }
 .succ {
   border-radius: 10%;
@@ -115,6 +118,7 @@
   box-sizing: border-box;
 }
 #body {
+  overflow-x: hidden;
   font-size: 14px;
   background-color: wheat;
 }
@@ -217,6 +221,8 @@ h2 {
   height: 100px;
 }
 #cart {
+  overflow-y: auto;
+  overflow-x: hidden;
   position: fixed;
   height: 100%;
   top: 0;
@@ -232,16 +238,23 @@ h2 {
   background-color: white;
 }
 .btnClear {
+  color: black;
+  text-decoration: none;
+  cursor: default;
   padding-right: 8px;
   text-align: right;
   width: 100%;
   display: block;
   margin-top: 10px;
 }
+.btnClear:hover {
+  color: orange;
+  text-decoration: none;
+}
 .boughtRow {
   position: sticky;
   padding: 15px;
-  height: 150px;
+  height: 160px;
   width: 100%;
   background-color: lightgray;
 }
@@ -260,7 +273,7 @@ h2 {
   float: left;
 }
 .boughtRows {
-  height: 100vh;
+  min-height: calc(100% - 178px);
   background-color: lightgray;
 }
 @media (max-width: 1200px) {
@@ -332,9 +345,6 @@ h2 {
 }
 .summary {
   display: block;
-  position: absolute;
-  bottom: 0;
-  right: 0;
   width: 100%;
   background-color: white;
   display: flex;

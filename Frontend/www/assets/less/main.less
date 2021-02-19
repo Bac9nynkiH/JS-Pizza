@@ -22,8 +22,8 @@
    
 }
 .mbLater{
-    display: inline-flex;
-    align-items: stretch;
+   display: inline-block;
+   margin-left: 10px;
 }
 .PIZZA{
     top:10px;
@@ -37,6 +37,11 @@ left: 13px;
 position: absolute;
 color: white;
 
+}
+#h4N{
+    min-width: 99px;
+    white-space: pre;
+    display:inline-block;
 }
 .rightBoughtImg{
     
@@ -114,6 +119,7 @@ width: 49%;
 
 
 #body{
+    
     font-size: 14px;
     background-color: wheat;
 }
@@ -132,12 +138,12 @@ width: 49%;
     width: calc(100%/12*10);
     height: 80px;
     background-color: black;
-    opacity: 70%;
+    opacity: 0.7;
 }
 .HeaderUpper {
     color: lightgrey;
     width: 100%;
-    height: 35px;
+    height: 40px;
     border-bottom: 4px solid lightgrey;
 }
 .HeaderDown {
@@ -310,7 +316,20 @@ float: left;
 }
 
 }
+.FreeDel{
+    display: inline-block;
+    margin-left: 20px;
+}
+@media(max-width: 992px) {
+.FreeDel{
+    display: none;
+}
+}
+
 @media(max-width: 766px){
+    .mbLater{
+        display: none;
+    }
     .StickyNavbar {
         width: calc(100%/12*6);
     }
@@ -326,9 +345,12 @@ float: left;
 }
 
 #h4N{
-    width: 5px;
-    display: inline-block;
+    display: block;
 }
+
+   
+
+   
 p{
     display: inline-block;
 }
@@ -415,6 +437,16 @@ p{
     bottom: -7px;
     left: 55px;
 }
+.orangeCircleWithNumber {
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
 
 
 

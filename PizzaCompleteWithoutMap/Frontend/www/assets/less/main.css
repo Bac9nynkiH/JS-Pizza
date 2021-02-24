@@ -1,0 +1,442 @@
+#pizza-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+}
+.new {
+  border-radius: 10%;
+  content: attr(data-new);
+  position: absolute;
+  width: 100px;
+  bottom: 98%;
+  right: 0;
+  background: darkred;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 3px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.caption {
+  height: 140px;
+}
+.mbLater {
+  display: inline-block;
+  margin-left: 10px;
+}
+.PIZZA {
+  top: 10px;
+  left: 9px;
+  position: absolute;
+  color: white;
+}
+.KMA {
+  top: 40px;
+  left: 13px;
+  position: absolute;
+  color: white;
+}
+#bought {
+  max-width: 160px;
+}
+.boughtBlock {
+  display: inline-block;
+  max-width: 135px;
+}
+#h4N {
+  min-width: 99px;
+  white-space: pre;
+  display: inline-block;
+}
+.rightBoughtImg {
+  position: absolute;
+  top: -125px;
+  right: -244px;
+  transform: scale(0.3);
+  float: left;
+}
+.minus {
+  padding-bottom: 6px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: inherit;
+  background-color: #e34739;
+  color: white;
+  height: 23px;
+  width: 23px;
+  line-height: 1px;
+  border-radius: 50%;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px #8a1106;
+}
+.plus {
+  padding-bottom: 6px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: inherit;
+  background-color: #4ca110;
+  color: white;
+  height: 24px;
+  width: 24px;
+  line-height: 3px;
+  border-radius: 50%;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-shadow: 2px -1px 1px #419109;
+}
+.X {
+  padding-bottom: 6px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: inherit;
+  background-image: linear-gradient(#f5f5f5, #dbdbdb);
+  color: #f0ab35;
+  height: 27px;
+  width: 27px;
+  line-height: 3px;
+  border-radius: 50%;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid #c2c0c0;
+}
+.DB {
+  display: inline-block;
+  width: 45%;
+}
+.MB {
+  display: inline-block;
+  width: 45%;
+}
+.succ {
+  border-radius: 10%;
+  content: attr(data-popular);
+  position: absolute;
+  width: 100px;
+  bottom: 98%;
+  right: 0;
+  background: green;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 3px;
+  height: 20px;
+  box-sizing: border-box;
+}
+#body {
+  overflow-x: hidden;
+  font-size: 14px;
+  background-color: wheat;
+}
+#row {
+  margin-top: 80px;
+}
+.StickyNavbar {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: calc(100% / 12*10);
+  height: 80px;
+  background-color: black;
+  opacity: 0.7;
+}
+.HeaderUpper {
+  color: lightgrey;
+  width: 100%;
+  height: 40px;
+  border-bottom: 4px solid lightgrey;
+}
+.HeaderDown {
+  color: lightgray;
+  height: 35px;
+}
+.grn {
+  margin-bottom: 0;
+}
+.DPizzaSmallSize {
+  margin-bottom: 0;
+}
+.containetColumn {
+  display: inline-flex;
+  width: 50%;
+}
+#buySelectedPizza {
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#exit {
+  position: fixed;
+  top: 0;
+  right: calc(100% / 12*2);
+  margin-right: 5px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: orange;
+}
+.flag {
+  transform: rotate(180deg);
+  width: 70px;
+  height: 200px;
+  float: left;
+}
+.smallPizza,
+.bigPizza {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  width: 49%;
+}
+h2 {
+  margin-bottom: 0;
+}
+.buy {
+  border: none;
+  color: white;
+  background-color: orange;
+}
+.AllPizza {
+  text-align: center;
+}
+.enumProducts {
+  padding: 4px;
+  color: orange;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.enumProducts:focus {
+  color: white;
+  background-color: orange;
+}
+.enumProducts:hover {
+  color: white;
+  background-color: orange;
+}
+.Footer {
+  text-align: center;
+  padding: 30px 35% 50px;
+  justify-content: space-around;
+  background-color: white;
+  height: 100px;
+}
+#cart {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: inherit;
+}
+.orderPanel {
+  padding-left: 8px;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+}
+.btnClear {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+  padding-right: 8px;
+  text-align: right;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+.btnClear:hover {
+  color: orange;
+  text-decoration: none;
+}
+.boughtRow {
+  position: sticky;
+  padding: 15px;
+  height: 160px;
+  width: 100%;
+  background-color: lightgray;
+}
+.rightBoughtImgGusto {
+  position: absolute;
+  top: 80px;
+  right: -225px;
+  transform: scale(0.3);
+  float: left;
+}
+.rightBoughtImgPolo {
+  position: absolute;
+  top: 220px;
+  right: -225px;
+  transform: scale(0.3);
+  float: left;
+}
+.boughtRows {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: calc(100% - 178px);
+  max-height: calc(100% - 178px);
+  background-color: lightgray;
+}
+@media (max-width: 1200px) {
+  .StickyNavbar {
+    width: calc(100% / 12*9);
+  }
+  #exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*3);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+  }
+}
+@media (max-width: 992px) {
+  .StickyNavbar {
+    width: calc(100% / 12*8);
+  }
+  #exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*4);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+  }
+}
+.FreeDel {
+  display: inline-block;
+  margin-left: 20px;
+}
+@media (max-width: 992px) {
+  .FreeDel {
+    display: none;
+  }
+}
+@media (max-width: 766px) {
+  .mbLater {
+    display: none;
+  }
+  .StickyNavbar {
+    width: calc(100% / 12*6);
+  }
+  #exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*6);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+  }
+  #h4N {
+    display: block;
+  }
+  p {
+    display: inline-block;
+  }
+}
+.sumzam {
+  display: inline-block;
+  width: 49%;
+}
+.summary {
+  display: block;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.Sumgrn {
+  text-align: right;
+  display: inline-block;
+  width: 49%;
+}
+.order {
+  margin-top: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+}
+.bottomFlagDiscount {
+  bottom: 110px;
+  left: 0;
+  position: fixed;
+  display: block;
+  float: left;
+  height: 75px;
+  width: 30px;
+  margin-left: 10px;
+}
+.flagBottom {
+  height: 200px;
+  width: 110px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: -25px;
+}
+.this,
+.week,
+.forAll,
+.discount {
+  position: fixed;
+  display: inline;
+  font-size: 16px;
+  color: white;
+}
+.this {
+  bottom: 50px;
+  left: 47px;
+}
+.week {
+  bottom: 32px;
+  left: 45px;
+}
+.forAll {
+  bottom: 15px;
+  left: 45px;
+}
+.discount {
+  bottom: -7px;
+  left: 55px;
+}
+.orangeCircleWithNumber {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+}

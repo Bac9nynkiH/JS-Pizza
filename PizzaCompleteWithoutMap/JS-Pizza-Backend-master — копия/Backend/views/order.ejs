@@ -1,0 +1,97 @@
+      
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+<div class="row" id="row">
+<div id="wrapper" class="wrapper">
+  <% include common/header.ejs %>
+<body id='body'>
+       <div class="tel">
+              <label for="phone">Enter your phone number:</label>
+              <input type="tel" id="phone" name="phone"
+                     pattern="[0-9]{10}"
+                     required>
+                     <label id='ErPhone'>Enter Valid phone number </label>
+       </div>
+       <div class="name">
+              <label for="phone">Enter your full name:</label>
+              <input id="name">
+       </div>
+
+       <div class="containerF ">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title">Add your Address</h2>
+    </div>
+    <div class="panel-body">
+      <input id="autocomplete" placeholder="Enter your address" onFocus="geolocate()" type="text" class="form-control">
+      <div id="address">
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label">Street address</label>
+            <input class="form-control" id="street_number" disabled="true">
+          </div>
+          <div class="col-md-6">
+            <label class="control-label">Route</label>
+            <input class="form-control" id="route" disabled="true">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label">City</label>
+            <input class="form-control field" id="locality" disabled="true">
+          </div>
+          <div class="col-md-6"> 
+            <label class="control-label">State</label>
+            <input class="form-control" id="administrative_area_level_1" disabled="true">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label">Zip code</label>
+            <input class="form-control" id="postal_code" disabled="true">
+          </div>
+          <div class="col-md-6">
+            <label class="control-label">Country</label>
+            <input class="form-control" id="country" disabled="true">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsxLqyH7x6B__qxnjn1IbQL4Lzy7rBsbY&libraries=places&callback=initAutocomplete" async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script type="text/javascript"  src="assets/js/auto-complete.js"> </script>
+<script type="text/javascript"  src="assets/js/main.js"> </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+ <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+<a id='CartLink' href="http://localhost:5050/"><button class="order">Назад</button></a>
+</body>
+</div>
+ <div id='OC' class="ZINDEX col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6">
+        <div id='cart'>
+            <div class="orderPanel">
+                <h4 class="zamov">Замовлення<span id='countBought' class="orangeCircleWithNumber">0</span></h4> <a id='btnClear' class="btnClear">очистити Замовлення</a>
+            </div>
+            <div class="boughtRows">
+
+            </div>
+             <div class="summary">
+                    <h4 class="sumzam">Сума замовлення</h4>
+                    <h3 class="Sumgrn"><span class = 'total'> 924 грн</span></h3>
+                    <button id="Order">Замовити</button>
+                </div>
+  </div>
+ 
+  </div>
+  </div>
+  <div class="abs">
+<% include common/footer.ejs %>
+  </div>
+  

@@ -1,0 +1,20 @@
+<%
+
+function getIngredientsArray(pizza) {
+    //Отримує вміст піци
+    var content = pizza.content;
+    var result = [];
+
+    //Object.keys повертає масив ключів в об’єкті JavaScript
+
+    Object.keys(content).forEach(function(key){
+
+        //a.concat(b) створює спільний масив із масивів a та b
+        result = result.concat(content[key]);
+    });
+
+    return result;
+}
+
+%>
+<div class='col-sm-12 col-md-6 col-lg-4 col-xl-4'>\n<div id='pizza-card' class='thumbnail pizza-card'>\n<img class='pizza-icon' src='<%= pizza.icon %>' alt='Pizza'>\n\n<% if(pizza.is_new) { %>\n<span class='new label label-danger'>Нова</span> \n<% } else if(pizza.is_popular) {%> \n<span class='succ label label-success'>Популярна</span>\n<% } %>\n\n<div class='caption'>\n<span class='title'><%= pizza.title %></span>\n<div class='type'><%= pizza.type %></div>\n<p class='description'>\n<%= getIngredientsArray(pizza).join(', ') %>\n</p >\n</div>\n<div id='buySelectedPizza'>\n<% if(pizza.has_small) { %><div class='smallPizza'>\n<p class='D'> <img src='assets/images/size-icon.svg'>30</p>\n<p class='M'> <img src='assets/images/weight.svg'>370</p>\n<h2><%= pizza.small_size.price %></h2>\n<p class=''.grn'>грн.</p>\n<button class='buy buy-small'> Купити</button>\n</div><% } %>\n<% if(pizza.has_big) { %><div class='bigPizza'>\n<p class='D'> <img src='assets/images/size-icon.svg'>30</p>\n<p class='M'> <img src='assets/images/weight.svg'>370</p>\n<h2><%= pizza.big_size.price %></h2><p class='.grn'><span>грн.</span></p>\n<button class='buy buy-big'> Купити</button>\n</div><% } %>\n</div>\n</div>\n</div>

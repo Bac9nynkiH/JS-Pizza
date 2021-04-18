@@ -1,0 +1,839 @@
+#pizza-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-between;
+}
+[data-foot] {
+  position: sticky;
+  bottom: -100px;
+  left: 0;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: space-around;
+  background-color: white;
+  height: 100px;
+}
+.new {
+  border-radius: 10%;
+  content: attr(data-new);
+  position: absolute;
+  width: 100px;
+  bottom: 98%;
+  right: 0;
+  background: darkred;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 3px;
+  height: 20px;
+  box-sizing: border-box;
+}
+.caption {
+  height: 140px;
+}
+.mbLater {
+  display: inline-block;
+  margin-left: 10px;
+}
+.PIZZA {
+  top: 10px;
+  left: 9px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+.KMA {
+  top: 40px;
+  left: 13px;
+  position: absolute;
+  color: white;
+  font-size: 20px;
+}
+#bought {
+  font-size: calc(1.3rem + 0.6vw);
+  margin-top: 0px;
+  max-width: 160px;
+}
+.boughtBlock {
+  display: inline-block;
+  max-width: 135px;
+}
+#h4N {
+  min-width: 99px;
+  white-space: pre;
+  display: inline-block;
+}
+.rightBoughtImg {
+  position: absolute;
+  top: -125px;
+  right: -244px;
+  transform: scale(0.3);
+  float: left;
+}
+.minus {
+  padding-bottom: 6px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: inherit;
+  background-color: #e34739;
+  color: white;
+  height: 23px;
+  width: 23px;
+  line-height: 1px;
+  border-radius: 50%;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-shadow: 0 -1px 1px #8a1106;
+}
+.plus {
+  padding-bottom: 6px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: inherit;
+  background-color: #4ca110;
+  color: white;
+  height: 24px;
+  width: 24px;
+  line-height: 3px;
+  border-radius: 50%;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  text-shadow: 2px -1px 1px #419109;
+}
+.X {
+  padding-bottom: 6px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: inherit;
+  background-image: linear-gradient(#f5f5f5, #dbdbdb);
+  color: #f0ab35;
+  height: 27px;
+  width: 27px;
+  line-height: 3px;
+  border-radius: 50%;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  border: 1px solid #c2c0c0;
+}
+.DB {
+  display: inline-block;
+  width: 45%;
+}
+.MB {
+  display: inline-block;
+  width: 45%;
+}
+.succ {
+  border-radius: 10%;
+  content: attr(data-popular);
+  position: absolute;
+  width: 100px;
+  bottom: 98%;
+  right: 0;
+  background: green;
+  color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 3px;
+  height: 20px;
+  box-sizing: border-box;
+}
+#body {
+  overflow-x: hidden;
+  font-size: 14px;
+  background-color: wheat;
+}
+#row {
+  margin-top: 80px;
+}
+.StickyNavbar {
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: calc(100% / 12*10);
+  height: 80px;
+  background-color: black;
+  opacity: 0.7;
+}
+.HeaderUpper {
+  color: lightgrey;
+  width: 100%;
+  height: 40px;
+  border-bottom: 4px solid lightgrey;
+}
+.HeaderDown {
+  color: lightgray;
+  height: 35px;
+}
+.grn {
+  margin-bottom: 0;
+}
+.DPizzaSmallSize {
+  margin-bottom: 0;
+}
+.containetColumn {
+  display: inline-flex;
+  width: 50%;
+}
+#buySelectedPizza {
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#exit {
+  position: fixed;
+  top: 0;
+  right: calc(100% / 12*2);
+  margin-right: 5px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: orange;
+}
+.flag {
+  transform: rotate(180deg);
+  width: 70px;
+  height: 200px;
+  float: left;
+}
+.smallPizza,
+.bigPizza {
+  text-align: center;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  width: 49%;
+}
+h2 {
+  margin-bottom: 0;
+}
+.buy {
+  border: none;
+  color: white;
+  background-color: orange;
+}
+.AllPizza {
+  text-align: center;
+}
+.enumProducts {
+  padding: 4px;
+  color: orange;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.abs {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.enumProducts:focus {
+  color: white;
+  background-color: orange;
+}
+.enumProducts:hover {
+  color: white;
+  background-color: orange;
+}
+.ZINDEX {
+  z-index: 1;
+}
+.Footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: space-around;
+  background-color: white;
+  height: 100px;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: space-around;
+  background-color: white;
+  height: 100px;
+}
+#cart {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  right: 0;
+  width: inherit;
+}
+.orderPanel {
+  padding-left: 8px;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  height: 80px;
+  background-color: white;
+}
+.btnClear {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+  padding-right: 8px;
+  text-align: right;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+.btnClear:hover {
+  color: orange;
+  text-decoration: none;
+}
+.boughtRow {
+  position: sticky;
+  padding: 15px;
+  height: 160px;
+  width: 100%;
+  background-color: lightgray;
+}
+.rightBoughtImgGusto {
+  position: absolute;
+  top: 80px;
+  right: -225px;
+  transform: scale(0.3);
+  float: left;
+}
+.rightBoughtImgPolo {
+  position: absolute;
+  top: 220px;
+  right: -225px;
+  transform: scale(0.3);
+  float: left;
+}
+#ErPhone {
+  color: red;
+  display: none;
+}
+.boughtRows {
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 80.8%;
+  max-height: 80.8%;
+  background-color: lightgray;
+}
+@media (min-width: 1201px) {
+  #wrapper {
+    width: 83.3%;
+  }
+  #OC {
+    width: 16.7%;
+  }
+}
+@media (max-width: 1200px) {
+  #OC {
+    width: 25%;
+  }
+  .StickyNavbar,
+  #wrapper {
+    width: calc(100% / 12*9);
+  }
+  #exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*3);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+  }
+}
+@media (max-width: 992px) {
+  #OC {
+    width: 33.35%;
+  }
+  .StickyNavbar,
+  #wrapper {
+    width: calc(100% / 12*8);
+  }
+  #exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*4);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+  }
+}
+.FreeDel {
+  display: inline-block;
+  margin-left: 20px;
+}
+@media (max-width: 992px) {
+  .FreeDel {
+    display: none;
+  }
+}
+@media (max-width: 766px) {
+  #OC {
+    width: 50%;
+  }
+  .mbLater {
+    display: none;
+  }
+  .StickyNavbar,
+  #wrapper {
+    width: calc(100% / 12*6);
+  }
+  #exit {
+    position: fixed;
+    top: 0;
+    right: calc(100% / 12*6);
+    margin-right: 5px;
+    height: 30px;
+    border: none;
+    color: white;
+    background-color: orange;
+  }
+  #h4N {
+    display: block;
+  }
+  p {
+    display: inline-block;
+  }
+}
+.sumzam,
+.total {
+  margin-top: 0px;
+  display: inline-block;
+  width: 49%;
+  font-size: calc(1.275rem + 0.3vw);
+}
+.summary {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.Sumgrn {
+  margin-top: 0px;
+  text-align: right;
+  display: inline-block;
+  width: 49%;
+}
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+#locationField,
+#controls {
+  position: relative;
+  width: 480px;
+}
+#autocomplete {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+}
+.label {
+  text-align: right;
+  font-weight: bold;
+  width: 100px;
+  color: #303030;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+#address {
+  border: 1px solid #000090;
+  background-color: #f0f9ff;
+  width: 480px;
+  padding-right: 2px;
+}
+#address td {
+  font-size: 10pt;
+}
+.field {
+  width: 99%;
+}
+.slimField {
+  width: 80px;
+}
+.wideField {
+  width: 200px;
+}
+#locationField {
+  height: 20px;
+  margin-bottom: 2px;
+}
+#googleMap {
+  height: 300px;
+  width: 500px;
+}
+#CartLink {
+  display: block;
+  width: 100%;
+}
+#Order {
+  margin-top: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+}
+.order {
+  margin-top: 5px;
+  background-color: orange;
+  color: white;
+  border: none;
+  display: inline-block;
+  width: 90%;
+  height: 40px;
+}
+.wrapper {
+  margin-left: 15px;
+  margin-top: 100px;
+}
+.bottomFlagDiscount {
+  bottom: 110px;
+  left: 0;
+  position: fixed;
+  display: block;
+  float: left;
+  height: 75px;
+  width: 30px;
+  margin-left: 10px;
+  z-index: 1;
+}
+.flagBottom {
+  height: 200px;
+  width: 110px;
+  position: relative;
+  margin-left: 10px;
+  margin-bottom: -25px;
+}
+.this,
+.week,
+.forAll,
+.discount {
+  position: fixed;
+  display: inline;
+  font-size: 16px;
+  color: white;
+}
+.this {
+  bottom: 50px;
+  left: 47px;
+}
+.week {
+  bottom: 32px;
+  left: 45px;
+}
+.forAll {
+  bottom: 15px;
+  left: 45px;
+}
+.discount {
+  bottom: -7px;
+  left: 55px;
+}
+.orangeCircleWithNumber {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  background-color: orange;
+  border-radius: 50%;
+}
+.rounded-circle {
+  display: inline-block;
+  box-sizing: border-box;
+  font-size: medium;
+  font-weight: bold;
+  color: white;
+  background: #ea862e;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 50%;
+}
+.allPizzaLabel {
+  margin-top: 80px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.allPizzaLabel #allPizzaText {
+  display: inline-block;
+  font-size: x-large;
+  font-weight: bold;
+}
+.typeOfPizza {
+  text-align: center;
+  padding-bottom: 15px;
+}
+.typeOfPizza .btn {
+  background: white;
+  color: #ea862e;
+  border: 0;
+}
+.typeOfPizza .active {
+  color: white;
+  background: #ea862e;
+}
+.clearfix::after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+html {
+  min-width: 560px;
+}
+@media (max-width: 560px) {
+  .container-fluid {
+    width: 100%;
+  }
+}
+.pizza-card .badge {
+  position: relative;
+  float: right;
+  top: -15px;
+  right: -10px;
+  font-size: large;
+  margin-bottom: -100%;
+}
+.pizza-card .badge.popular-badge {
+  background: darkgreen;
+}
+.pizza-card .badge.new-badge {
+  background: darkred;
+}
+.pizza-card .pizza-icon {
+  width: 100%;
+  border-radius: 50%;
+}
+.pizza-card .title {
+  color: #ea862e;
+  background-color: white;
+  font-weight: bold;
+  font-size: x-large;
+}
+.pizza-card .type {
+  font-size: small;
+  font-weight: bolder;
+  color: grey;
+}
+.pizza-card .description {
+  height: 100px;
+}
+@media (max-width: 1240px) {
+  .pizza-card .description {
+    height: 200px;
+  }
+}
+.pizza-card .size_columns {
+  box-sizing: border-box;
+}
+.pizza-card .pizza_column {
+  width: 50%;
+  text-align: center;
+}
+.pizza-card .pizza_column.small_size {
+  float: right;
+}
+.pizza-card .pizza_column.big_size {
+  float: left;
+}
+#cart {
+  position: fixed;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background: lightgrey;
+  height: 100vh;
+}
+@media (max-width: 560px) {
+  #cart {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+#cart .buy {
+  padding-top: 10px;
+  background: white;
+  height: 120px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  font-size: large;
+  font-weight: bold;
+  width: 100%;
+}
+@media (max-width: 560px) {
+  #cart .buy {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 20px;
+  }
+}
+#cart .buy .price {
+  margin-right: 10px;
+  display: block;
+  float: right;
+}
+#cart .buy .labelBuy {
+  margin-left: 10px;
+  display: block;
+  float: left;
+}
+#cart .buy .buyButton {
+  font-size: x-large;
+  height: 50px;
+  margin-top: 15px;
+  margin-left: 5%;
+  width: 90%;
+  outline: 0 !important;
+}
+.rightPanelUpLabel {
+  height: 80px;
+  background: white;
+}
+.rightPanelUpLabel .labelOrder {
+  font-size: medium;
+  font-weight: bold;
+  margin-top: 80px/3;
+  margin-left: 5px;
+  display: inline-block;
+}
+.rightPanelUpLabel .btn {
+  font-size: xx-small;
+  padding: 0;
+  margin-top: 80px/3+5px;
+  margin-right: 5px;
+  display: inline-block;
+  float: right;
+}
+.buyPizza {
+  border: 0 solid darkgray;
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+}
+.buyPizza .infAboutPizza {
+  display: inline-block;
+  margin-left: 8px;
+}
+.buyPizza .infAboutPizza .pizzaName {
+  color: #ea862e;
+}
+.buyPizza .infAboutPizza .weight {
+  margin-left: 10px;
+}
+.buyPizza .infAboutPizza .price_labels {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+.buyPizza .infAboutPizza .price_labels .btn {
+  height: 28px;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 28px;
+  border-radius: 50%;
+  outline: 0 !important;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  text-indent: 0;
+}
+.buyPizza .infAboutPizza .price_labels .btn .label {
+  font-size: x-large;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+.buyPizza .infAboutPizza .price_labels .btn .minus {
+  top: 47%;
+}
+.buyPizza .infAboutPizza .price_labels .btn .delete {
+  color: #ea862e;
+  font-size: large;
+}
+.buyPizza .infAboutPizza .price_labels .deleteButton {
+  margin-left: 15px;
+}
+.buyPizza .infAboutPizza .price_labels .number {
+  display: inline-block;
+  font-size: medium;
+  font-weight: normal;
+}
+.buyPizza .img {
+  display: block;
+  float: right;
+  margin-top: 9px;
+  overflow: hidden;
+  position: relative;
+  height: 90px;
+  width: 45px;
+}
+.buyPizza .img img {
+  width: 200%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+.order-container {
+  padding-top: 100px;
+}
+.order-info {
+  margin: auto;
+  width: 500px;
+}
+.order-info .button-div {
+  box-sizing: border-box;
+  padding: 10px;
+  margin: auto;
+}
+#map {
+  padding-top: 10px;
+  width: 500px;
+  height: 300px;
+  margin: auto;
+}

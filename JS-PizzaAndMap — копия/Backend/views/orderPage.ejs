@@ -1,0 +1,72 @@
+<% include common/header.ejs %>
+
+<div class="container-fluid col-xl-10 col-lg-9 col-md-8 col-sm-6 col-6 order-container">
+    <h3>1.Контактні дані</h3>
+    <div class="form-group">
+        <label for="exampleInputEmail1" id="name">Ім'я</label>
+        <input type="text" name="name" class="form-control" id="exampleInputName1" placeholder="Ім'я та прізвище" required>
+        <label id="nameError"></label>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1" id="phone">Телефон</label>
+        <input type="text" name="phone" class="form-control" id="exampleInputPhone1" placeholder="+3807894532" required>
+        <label id="phoneError"></label>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputAddress1" id="address">Адреса</label>
+        <input type="text" name="address" class="form-control" id="exampleInputAddress1" placeholder="м.Київ" required>
+        <label id="addressError"></label>
+        <div class="map-address">
+
+        </div>
+    </div>
+    <div class="order-info">
+        <br>
+        <span>
+            <b>Приблизний час доставки:</b> <span id="delivery-time"></span>
+        </span>
+        <br/>
+        <span>
+            <b>Адреса доставки</b> <span id="delivery-address"></span>
+        </span>
+        <div id="button_div">
+            <button type="submit" class="btn btn-warning" id="submit-order">Замовити</button>
+        </div>
+    </div>
+    <div id="map"></div>
+    <!-- місце для віджету -->
+    <div id="liqpay"></div>
+    <!-- піключаємо скрипт -->
+    <script src="//static.liqpay.ua/libjs/checkout.js" async></script>
+    <script src="assets/js/map.js"></script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-lYV63ujVUrRplyaotlzz5p83_O-R7vg&callback=initMap&libraries=&v=weekly"
+    async
+></script>
+</div>
+ <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 ZINDEX">
+        <div id='cart'>
+            <div class="orderPanel">
+                <h4 class="zamov">Замовлення<span id='countBought' class="orangeCircleWithNumber">0</span></h4> <a id='btnClear' class="btnClear">очистити Замовлення</a>
+            </div>
+
+            <div class="boughtRows">
+                
+
+
+               
+
+
+            </div>
+             <div class="summary">
+                    <h4 class="sumzam">Сума замовлення</h4>
+                    <h3 class="Sumgrn"><span class = 'total'> 924 грн</span></h3>
+                 
+                </div>
+            
+        </div>
+    </div>
+
+
+
+<% include common/footer.ejs %>

@@ -1,0 +1,114 @@
+<% include common/header.ejs %>
+
+<head lang="en">
+  
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+
+    <!-- Bootsrap CSS -->
+ 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+     <script type="text/javascript" src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+ <script type="text/javascript" src="https://unpkg.com/web3@0.20.5/dist/web3.min.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    
+</head>
+
+<body id='body'>
+
+
+  
+             
+       
+        <div class="row" id="row">
+
+
+     <div class="col-xl-10 col-lg-9 col-md-8 col-sm-6 col-6">
+
+        
+        <div class="container">
+
+            <div class="AllPizza"><h3>Усі піци<span id='PizasCount' class="orangeCircleWithNumber">1</span></h3>
+                <a data-id='1' id='1' class="enumProducts" href="#">Усі</a>
+                <a data-id='2' id='2' class="enumProducts" href="#">М'ясні</a>
+                <a data-id='3' id='3' class="enumProducts" href="#">З ананасами</a>
+                <a data-id='4' id='4' class="enumProducts" href="#">З грибами</a>
+                <a data-id='5' id='5' class="enumProducts" href="#">З морепродуктами</a>
+                <a data-id='6' id='6' class="enumProducts" href="#">Вега</a>
+            </div>
+
+
+            <div class="row" id="pizza_list">
+
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>   
+    
+
+
+    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 ZINDEX">
+        <div id='cart'>
+            <div class="orderPanel">
+                <h4 class="zamov">Замовлення<span id='countBought' class="orangeCircleWithNumber">0</span></h4> <a id='btnClear' class="btnClear">очистити Замовлення</a>
+            </div>
+
+            <div class="boughtRows">
+                
+
+
+               
+
+
+            </div>
+             <div class="summary">
+                    <h4 class="sumzam">Сума замовлення</h4>
+                    <h3 class="Sumgrn"><span class = 'total'> 924 грн</span></h3>
+                    <a id='CartLink' href="http://localhost:3050/order.html"><button class="order">У кошик</button></a>
+                </div>
+            
+        </div>
+    </div>
+
+
+</div>
+
+
+    <div class="bottomFlagDiscount">
+        <img src="assets\images\discount.svg" class="flagBottom">
+              <p class="this">ЦЬОГО</p>
+              <p class="week">ТИЖНЯ</p>
+              <p class="forAll">НА ВСЕ</p>
+              <p class="discount">-20%</p>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<!--Own JavaScript -->
+ <script type="text/javascript"  src="assets/js/main.js"> </script>  
+  
+ 
+</body>
+
+<% include common/footer.ejs %>
